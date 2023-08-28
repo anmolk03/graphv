@@ -15,7 +15,7 @@ This is a web portal developed using React JS.
 
 ### To run the project:
 ```
-$ git clone https://github.com/PoojaB01/GraphiX.git
+$ git clone https://github.com/anmolk03/graphv.git
 $ cd GraphiX
 $ npm start
 ```
