@@ -1,10 +1,28 @@
 .App {
+  overflow: hidden;
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-navigate {
+  background-color: grey;
+  z-index: 1;
+}
+
+.App-graph{
+  padding: 20px;
+  background-color: rgb(31, 88, 114);
+  z-index: 1;
+}
+
+.transparent{
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,7 +33,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,6 +46,20 @@
   color: #61dafb;
 }
 
+#App-node {
+  position: absolute;
+  color: black;
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +67,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.grid-container {
+  display: grid;
+}
+.grid-item {
+}
+
+.App-body {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  grid-template-columns: 1fr 5fr;
+}
+
+.App-edge {
+  position: absolute;
+  z-index: -1;
 }
